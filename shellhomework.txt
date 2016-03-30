@@ -1,0 +1,13 @@
+信息科学与技术学院 计算机科学系 郑子寰 22920142203975
+#! /bin/bash
+function read_d(){
+    for file in `ls $1`
+    do
+        if [ -d $1"/"$file ]
+        then
+            read_d $1"/"$file
+        else
+            echo $1"/"$file
+        fi
+    done
+}
