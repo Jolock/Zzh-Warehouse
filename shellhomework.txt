@@ -11,3 +11,4 @@ function read_d(){
         fi
     done
 }
+hehe
